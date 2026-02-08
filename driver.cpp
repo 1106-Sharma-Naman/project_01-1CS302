@@ -26,8 +26,8 @@ int main()
     // Demonstrate this by outputting:
     //  - whether the train is empty
     //  - how many cargo items it currently holds
-    cout << "Train is Empty: " << train.isEmpty()<< endl;
-    cout << "Count of Cargo: " << train.getCount() << endl;
+    cout << "Train is Empty: " << train.IsEmpty()<< endl;
+    cout << "Count of Cargo: " << train.GetCount() << endl;
 
 
     // Let's load our train!
@@ -44,15 +44,15 @@ int main()
 
     // Load cargo onto the train.
     // After loading, the train should no longer be empty.
-    train.load(Ca11);
+    train.load(Ca1);
     train.load(Ca2);
     train.load(Ca3);
 
 
     // Display the number of cargo items on the train.
     // Also display whether the train is empty.
-    cout << "Cargo count: " << train.getCount() << endl;
-    cout << "Train empty: " << train.isEmpty() << endl;
+    cout << "Cargo count: " << train.GetCount() << endl;
+    cout << "Train empty: " << train.IsEmpty() << endl;
 
 
     // Output train-specific functionality.
@@ -65,7 +65,7 @@ int main()
     // Demonstrate unloading one cargo item.
     // Then display the updated cargo count.
     train.unload();
-    cout << "Cargo Unloaded/Unloading: " << train.getCount() <<endl;
+    cout << "Cargo Unloaded/Unloading: " << train.GetCount() <<endl;
 
 
     // Demonstrate moving the train.
@@ -86,8 +86,8 @@ int main()
 
     // The bus should be empty when first created.
     // Demonstrate this with output.
-    cout << "Bus empty: " << bus.isEmpty() << endl;
-    cout << "Passenger Count" << bus.getCount() << endl;
+    cout << "Bus empty: " << bus.IsEmpty() << endl;
+    cout << "Passenger Count" << bus.GetCount() << endl;
 
 
     // Set the fare for the bus.
@@ -118,8 +118,8 @@ int main()
 
     // Display the number of passengers on the bus.
     // Also display whether the bus is empty.
-    cout << "Passenger count: " << bus.getCount() << endl;
-    cout << "Bus empty: " << bus.isEmpty() << endl;
+    cout << "Passenger count: " << bus.GetCount() << endl;
+    cout << "Bus empty: " << bus.IsEmpty() << endl;
 
 
     // Output bus-specific functionality.
@@ -132,7 +132,7 @@ int main()
     // Demonstrate unloading one passenger.
     // Then display the updated passenger count.
     bus.unload();
-    cout << "Passenger count after unloaded: " << bus.getCount() << endl;
+    cout << "Passenger count after unloaded: " << bus.GetCount() << endl;
 
 
     // Demonstrate moving the bus.
@@ -160,10 +160,10 @@ int main()
     //  - empty status
     //  - item count
 
-    cout << "Train empty: " << train.isEmpty() << endl;
-    cout << "Train cargo count: " << train.getCount() << endl;
-    cout << "Bus empty: " << bus.isEmpty() << endl;
-    cout << "Bus passenger count: " << bus.getCount() << endl;
+    cout << "Train empty: " << train.IsEmpty() << endl;
+    cout << "Train cargo count: " << train.GetCount() << endl;
+    cout << "Bus empty: " << bus.IsEmpty() << endl;
+    cout << "Bus passenger count: " << bus.GetCount() << endl;
 
     cout << endl;
     cout << "=== End of Program ===" << endl;

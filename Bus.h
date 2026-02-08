@@ -6,13 +6,13 @@ using namespace std;
 #include "Transporter.h"
 #include "Person.h"
 
-class Bus : public Transporter<Cargo>{
+class Bus : public Transporter<Person>{
 private:
     Person* listofPeople;
     int currentCount;
     int maxCount;
-    double fare
-    void sortPeople;
+    double fare;
+    void sortPeople();
 
 public:
 //Constructors
@@ -25,12 +25,12 @@ public:
     void unload() override;
     void move() override;
     void empty() override;
-    bool isEmpty() const override;
-    int getCount() const override;
+    bool IsEmpty() const override;
+    int GetCount() const override;
     double getFare() const;
     double getTotalFare() const;
 
 //Setters
 double setFare(double newFare);
 };
-##endif
+#endif

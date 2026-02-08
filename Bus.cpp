@@ -8,10 +8,11 @@ Bus:: Bus(){
     listofPeople = new Person[maxCount];
 }
 
-Bus:: Bus(int max, double fareperCustomer);{
+Bus:: Bus(int max, double fareperCustomer){
     maxCount = max;
     currentCount = 0;
     fare = fareperCustomer;
+    listofPeople = new Person[maxCount];
 }
 
 //Destructor
@@ -52,20 +53,20 @@ void Bus::empty(){
 }
 
 void Bus::move(){
-    cout<<"Bus moving to next stop.\n"
+    cout<<"Bus moving to next stop.\n";
 }
 
 //Checking if the bus is empty
-bool Bus::isEmpty() const{
+bool Bus::IsEmpty() const{
     return currentCount==0;
 }
 
 //For number of passangers
-int Bus::getCount() const{
+int Bus::GetCount() const{
     return currentCount;
 }
 //Fare per passanger
-int Bus::getFare() const{
+double Bus::getFare() const{
     return fare;
 }
 

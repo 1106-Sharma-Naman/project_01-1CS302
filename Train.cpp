@@ -27,7 +27,7 @@ if (currentCount < maxCount){
 }
 // Unload of cargo
 void Train:: unload(){
-    if (ListofCargo > 0){
+    if (currentCount > 0){
     currentCount--;
     }
 }
@@ -38,8 +38,8 @@ currentCount = 0;
 }
 
 // Checking that the train is empty or not
-bool Train:: isEmpty() const {
-    if (currentCount=0){
+bool Train:: IsEmpty() const {
+    if (currentCount==0){
     return true;
     }
     else{
@@ -48,8 +48,12 @@ bool Train:: isEmpty() const {
 }
 
 // Getting Number of cargo
-int Train:: getCount() const{
+int Train:: GetCount() const{
     return currentCount;
+}
+
+void Train::move() {
+    cout << "Train moving to next station.\n";
 }
 
 // Get the weight

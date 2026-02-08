@@ -26,7 +26,7 @@ public:
 // Getters
     double getWeightTotal() const;
 
-    bool isEmpty() const override;
-    int getCount() const override;
+    bool IsEmpty() const override;
+    int GetCount() const override;
 };
 #endif
